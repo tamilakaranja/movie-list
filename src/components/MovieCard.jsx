@@ -1,11 +1,11 @@
-function MovieCard() {
+function MovieCard(props) {
   return (
     <div>
-      <h2>The Conjuring</h2>
-      <p>Year: 2013</p>
-      <p>Genre: Horror</p>
+      <h2>{props.title}</h2>
+      <p>Year: {props.year}</p>
+      <p>Genre: {props.genre}</p>
     </div>
   );
 }
 
-export default MovieCard
+export default MovieCard;
