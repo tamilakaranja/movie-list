@@ -1,3 +1,5 @@
+
+
 function MovieCard(props) {
   return (
     <div>
