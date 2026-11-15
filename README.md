@@ -1,16 +1,44 @@
-# React + Vite
+# Movie List
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple React app that shows a list of movies. You can add new movies, delete movies, and search or filter the list.
 
-Currently, two official plugins are available:
+**Live site:** https://tamilakaranja.github.io/movie-list/
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- Shows movies from an array of objects using `.map()`
+- Add a new movie with a form
+- Delete a movie with a button
+- Search and filter movies
+- Styled with Tailwind CSS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Built With
 
-## Expanding the ESLint configuration
+- React
+- Vite
+- Tailwind CSS
+- GitHub Pages 
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+- `MovieList.jsx`: shows the whole list
+- `MovieCard.jsx`: shows one movie
+- `AddMovie.jsx`: form to add a movie
+- `movies.js`: the movie data
+
+## Run It Locally
+
+```bash
+npm install
+npm run dev
+```
+
+## Deploy
+
+```bash
+npm run deploy
+```
+
+## Author
+
+Tamila Karanja, Zindua School
