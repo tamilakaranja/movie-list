@@ -14,8 +14,8 @@ function App() {
     <div>
       <h1>Movie List</h1>
 
-       <AddMovie />
-
+       
+<AddMovie onAddMovie={handleAddMovie} />
       {movies.map((movie) => (
         <MovieCard
           key={movie.id}
