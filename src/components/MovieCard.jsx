@@ -1,11 +1,13 @@
-
-
-function MovieCard(props) {
+function MovieCard({ id, title, year, genre, onDeleteMovie }) {
   return (
     <div>
-      <h2>{props.title}</h2>
-      <p>Year: {props.year}</p>
-      <p>Genre: {props.genre}</p>
+      <h2>{title}</h2>
+      <p>Year: {year}</p>
+      <p>Genre: {genre}</p>
+
+      <button onClick={() => onDeleteMovie(id)}>
+        Delete
+      </button>
     </div>
   );
 }

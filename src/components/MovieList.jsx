@@ -1,6 +1,6 @@
 import MovieCard from "./MovieCard";
 
-function MovieList({ movies }) {
+function MovieList({ movies, onDeleteMovie }) {
   return (
     <div>
       {movies.map((movie) => (
@@ -9,6 +9,8 @@ function MovieList({ movies }) {
           title={movie.title}
           year={movie.year}
           genre={movie.genre}
+          id={movie.id}
+          onDeleteMovie={onDeleteMovie}
         />
       ))}
     </div>
