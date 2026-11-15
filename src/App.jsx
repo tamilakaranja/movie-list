@@ -1,6 +1,7 @@
 import { useState } from "react";
 import MovieCard from "./components/MovieCard";
 import initialMovies from "./data/movies";
+import AddMovie from "./components/AddMovie";
 
 function App() {
   const [movies, setMovies] = useState(initialMovies);
@@ -8,6 +9,8 @@ function App() {
   return (
     <div>
       <h1>Movie List</h1>
+
+       <AddMovie />
 
       {movies.map((movie) => (
         <MovieCard
