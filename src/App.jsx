@@ -6,6 +6,10 @@ import AddMovie from "./components/AddMovie";
 function App() {
   const [movies, setMovies] = useState(initialMovies);
 
+  function handleAddMovie(newMovie) {
+  setMovies([...movies, newMovie]);
+}
+
   return (
     <div>
       <h1>Movie List</h1>
